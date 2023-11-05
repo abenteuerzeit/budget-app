@@ -2,6 +2,7 @@
 import budget
 from budget import create_spend_chart
 from unittest import main
+import app
 
 food = budget.Category("Food")
 food.deposit(1000, "initial deposit")
@@ -23,3 +24,6 @@ print(create_spend_chart([food, clothing, auto]))
 
 # Run unit tests automatically
 main(module='test_module', exit=False)
+
+if __name__ == "__main__":
+    app.main()
